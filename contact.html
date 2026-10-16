@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="North Star Bakery: handmade bread, pastries, and pre-order inquiries.">
+  <title>Contact and Pre-Orders | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <p class="brand"><a href="index.html">North Star Bakery</a></p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Our Baked Goods</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact and Pre-Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <h1>Contact and Pre-Orders</h1>
+    <section aria-labelledby="reach-heading">
+      <h2 id="reach-heading">Visit or get in touch</h2>
+      <p>North Star Bakery serves its local community. Contact the team to confirm the bakery address, current business hours, and available pickup dates.</p>
+      <p>Pre-order requests are inquiries, not confirmed purchases. Our team will need to confirm availability and pricing.</p>
+    </section>
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Pre-order and inquiry form</h2>
+      <p>Fields marked required must be completed. This HTML-only demo form shows browser validation; a server is needed to receive submissions.</p>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Your contact information</legend>
+          <p><label for="customer-name">Name (required)</label><br>
+          <input id="customer-name" name="customer_name" type="text" autocomplete="name" minlength="2" required></p>
+          <p><label for="customer-email">Email (required)</label><br>
+          <input id="customer-email" name="customer_email" type="email" autocomplete="email" required></p>
+        </fieldset>
+        <fieldset>
+          <legend>Tell us about your request</legend>
+          <p><label for="request-type">Request type (required)</label><br>
+          <select id="request-type" name="request_type" required>
+            <option value="">Select a request</option>
+            <option value="preorder">Pre-order inquiry</option>
+            <option value="question">General question</option>
+          </select></p>
+          <p><label for="pickup-date">Preferred pickup date</label><br>
+          <input id="pickup-date" name="pickup_date" type="date"></p>
+          <p><label for="item-details">Item details (required)</label><br>
+          <textarea id="item-details" name="item_details" rows="5" cols="42" minlength="10" required></textarea></p>
+          <p><label for="allergy-notes">Allergy notes (if applicable)</label><br>
+          <textarea id="allergy-notes" name="allergy_notes" rows="3" cols="42"></textarea></p>
+        </fieldset>
+        <p><button type="submit">Review inquiry</button></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>North Star Bakery | Fresh bread made with care.</p>
+    <p><a href="contact.html">Ask a question or request a pre-order</a></p>
+  </footer>
+</body>
+</html>
